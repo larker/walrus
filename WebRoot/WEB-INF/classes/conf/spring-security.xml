@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  
+               http://www.springframework.org/schema/tx  
+               http://www.springframework.org/schema/tx/spring-tx-3.0.xsd  
+               http://www.springframework.org/schema/context  
+               http://www.springframework.org/schema/context/spring-context-3.0.xsd
+               http://www.springframework.org/schema/security
+    		   http://www.springframework.org/schema/security/spring-security-3.2.xsd">
+	<!-- 登录失败后业务处理 -->
+	<bean id="failureHandler" class="org.j4.security.LoginAuthenticationFailureHandler"></bean>
+	<!-- 登录成功业务处理 -->
+	<bean id="successHandler" class="org.j4.security.LoginAuthenticationSuccesssHandler">
+	    <!-- 可变换登录成功后的路径，验证用户是否拥有该权限 -->
+		<property name="defaultUrl" value="/index.html"></property>  
+	</bean>
+	<!-- 退出成功业务处理 -->
+	<bean id="logoutHandler" class="org.j4.security.LogoutAuthenticationSuccesssHandler">
+	    <property name="defaultUrl" value="/index.html"></property>  
+	</bean> 
+<!-- security 配置 -->
+	<security:http auto-config="true">
+		<!-- session管理，防止重复登录，同一用户第二次登录会让第一次登录失效 -->
+		<security:session-management>
+			<security:concurrency-control max-sessions="1"/> 
+		</security:session-management>
+		<!-- 如果第二次登录，阻止，并显示错误信息 -->
+		<!-- <security:session-management>
+			<security:concurrency-control max-sessions="1" error-if-maximum-exceeded="true" />
+		</security:session-management> -->
+		<security:intercept-url pattern="/index/*" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+		<security:intercept-url pattern="/cms/*" access="ROLE_ADMIN"/>
+		<!-- 登录页面为/login.jsp，登录成功页面为/index.jsp，且总是用这个页面为登录成功页面 -->
+		<security:form-login 
+		    login-page="/login/login.jsp"
+			authentication-failure-url="/login/login.jsp?error=true"
+			authentication-success-handler-ref="successHandler"
+			always-use-default-target="true" />
+		<security:logout logout-url="/logout.html" success-handler-ref="logoutHandler"/>
+	</security:http>
+	<security:authentication-manager>
+		<security:authentication-provider>
+<!-- 			<security:password-encoder hash="md5" />这里使用md5对密码加密  密码是1 -->
+			<security:user-service>
+				<security:user name="admin" password="123" authorities="ROLE_ADMIN" />
+				<security:user name="jiang" password="123" authorities="ROLE_ADMIN" />
+			</security:user-service>
+		</security:authentication-provider>
+	</security:authentication-manager>
+</beans>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" updateCheck="false">  
+	<diskStore path="java.io.tmpdir/cmsehcache" />  
+   <cache name="SimplePageCachingFilter"
+		 timeToIdleSeconds="3000"  
+            timeToLiveSeconds="1800"  
+            maxElementsInMemory="80000"  
+            eternal="false"  
+            overflowToDisk="true"  
+            maxElementsOnDisk="10000000"  
+            diskPersistent="true"  
+            diskExpiryThreadIntervalSeconds="1200"  
+            memoryStoreEvictionPolicy="LRU"  
+	/>
+    <defaultCache  
+            timeToIdleSeconds="50"  
+            timeToLiveSeconds="60"  
+            maxElementsInMemory="80000"  
+            eternal="false"  
+            overflowToDisk="true"  
+            maxElementsOnDisk="10000000"  
+            diskPersistent="true"  
+            diskExpiryThreadIntervalSeconds="120"  
+            memoryStoreEvictionPolicy="LRU"  
+            /> 
+           <!--  timeToIdleSeconds=120；
+			timeToLiveSeconds=180；
+			上面的表示此缓存最多可以存活3分钟，如果期间超过2分钟未访问 那么此缓存失效 -->
+</ehcache>  

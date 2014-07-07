@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+
+<tiles-definitions>
+	<definition name="template" template="/index.ftl">
+		<put-attribute name="bottomControls" value="/_bottomControls.ftl"/>
+		<put-attribute name="title" value=""/>
+	</definition>
+	
+	<definition name="menu" template="/_menu.ftl">
+	</definition>
+
+	<definition name="index" extends="template">
+		<put-attribute name="content" value="/_content_index.ftl"/>
+	</definition>
+
+	<definition name="noSite" template="/noSite.ftl">
+	</definition>
+
+	<definition name="rubric" extends="template">
+		<put-attribute name="content" value="/_content_rubric.ftl"/>
+		<put-attribute name="title" value="/_title.ftl"/>
+	</definition>
+
+	<definition name="404" template="/_404.ftl">
+	</definition>
+	<definition name="500" template="/_500.ftl">
+	</definition>
+	
+	<definition name="login" template="/login.ftl">
+	</definition>
+
+	<definition name="fileList" template="/fileList.ftl">
+	</definition>
+
+	<definition name="upload" template="/upload.ftl">
+	</definition>
+
+	<definition name="bannerList" template="/bannerList.ftl"/>
+	
+	<definition name="rubricList" template="/_rubricList.ftl">
+	</definition>
+	
+</tiles-definitions>

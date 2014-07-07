@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping package="org.j4.model" default-lazy="true">
+
+  <class name="Rubric">
+    <cache usage="read-write"/> 
+  	<id name="id"><generator class="org.hibernate.id.enhanced.SequenceStyleGenerator"></generator></id>
+  	<many-to-one name="parent" update="false" insert="false" column="parent_id" class="Rubric" lazy="false"/>
+  	
+  	<list name="children" lazy="false" cascade="delete,save-update,persist,merge">
+        <key column="parent_id"/>
+        <list-index column="orderno"></list-index>
+        <one-to-many class="Rubric"/>
+    </list>
+  	<property name="title"></property>
+  	<property name="mode" type="org.j4.model.ModeHib" not-null="true"/>
+	<property name="orderno"><formula>orderno</formula></property>
+  	<property name="url" />
+  	<property name="abstr"></property>
+  	<property name="body" type="text"></property>
+  	<property name="online"></property>
+  	<property name="date" column="adate"></property>
+  	<property name="visibleForever" />
+  	<property name="visibleFrom" />
+  	<property name="visibleTo" />
+  	<property name="leaf"/>
+  </class>
+  
+  <class name="Site">
+	<cache usage="read-write"/> 
+  	<id name="id"><generator class="org.hibernate.id.enhanced.SequenceStyleGenerator"></generator></id>  
+  	<many-to-one name="rootRubric" column="root_rubric_id" cascade="save-update,persist,merge,delete" not-null="true" unique="true" lazy="false"/>
+  	
+  	<bag name="boxes" lazy="false" cascade="save-update,persist,merge,delete">
+  		<key column="site_id"/>
+  		<one-to-many class="Box"/>
+  	</bag>
+  	<property name="language"/>
+  	<property name="host"/>
+  	<property name="hostAliases"/>
+  	<property name="title"/>
+  	<property name="restricted"/>
+  	<property name="index">
+  		<column name="[index]"></column>
+  	</property>
+  </class>
+  
+  <class name="Box">
+    <cache usage="read-write"/> 
+  	<id name="id"><generator class="org.hibernate.id.enhanced.SequenceStyleGenerator"></generator></id>
+  	<property name="boxId"/>
+  	
+  	<joined-subclass name="RubricBox" table="rubricBox" lazy="false">
+  		<key column="id"/>
+	  	<many-to-one name="rubric" column="rubric_id" cascade="all" not-null="false" unique="false" lazy="false"/>
+  	</joined-subclass>
+  	<joined-subclass name="TextBox" table="textBox" lazy="false">
+  		<key column="id"/>
+	  	<property name="title"/>
+	  	<property name="body" type="text"/>
+  	</joined-subclass>
+  	<joined-subclass name="BannerBox" table="bannerBox">
+  		<key column="id" />
+  		<bag name="banners" lazy="false" cascade="save-update,persist,merge,delete">
+  			<key column="banner_box_id"/>
+  			<one-to-many class="Banner"/>
+  		</bag>
+  	</joined-subclass>
+  	<joined-subclass name="ImageBox" table="imageBox">
+  		<key column="id" />
+  		<property name="image" />
+  	</joined-subclass>
+  	<joined-subclass name="SlideshowBox" table="slideshowBox">
+  		<key column="id" />
+  		<bag name="slides" lazy="false" cascade="save-update,persist,merge,delete">
+  			<key column="slideshow_id" />
+  			<one-to-many class="Slide" />
+  		</bag>
+  	</joined-subclass>  	
+  </class>
+  
+  <class name="Banner">
+    <cache usage="read-write"/> 
+  	<id name="id"><generator class="org.hibernate.id.enhanced.SequenceStyleGenerator"></generator></id>
+	<property name="banner" />
+	<property name="url" />
+  </class>
+  
+  <class name="Slide">
+    <cache usage="read-write"/> 
+  	<id name="id"><generator class="org.hibernate.id.enhanced.SequenceStyleGenerator"></generator></id>
+	<property name="title"  />
+	<property name="body" type="text" />
+	<property name="orderno" />
+  </class>
+  <class name="Log">
+    <cache usage="read-write"/> 
+  	<id name="id"><generator class="org.hibernate.id.enhanced.SequenceStyleGenerator"></generator></id>
+	<property name="ip" length="20"/>
+	<property name="date" column="adate"/>
+	<property name="broswer" length="15"/>
+	<property name="user" length="10"/>
+	<property name="note" length="20"/>
+  </class>
+</hibernate-mapping>

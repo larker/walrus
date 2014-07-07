@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+
+<beans>
+	<bean id="r17" class="org.j4.model.Rubric">
+		<constructor-arg>
+			<null />
+		</constructor-arg>
+		<constructor-arg>
+			<value>CMS ROOT</value>
+		</constructor-arg>
+		<property name="online">
+			<value>true</value>
+		</property>
+		<property name="abstr">
+			<value></value>
+		</property>
+
+		<property name="body">
+			<value></value>
+		</property>
+		<property name="date">
+			<value>2013-09-20</value>
+		</property>
+		<property name="visibleForever">
+			<value>true</value>
+		</property>
+		<property name="visibleFrom">
+			<value>2013-09-20</value>
+		</property>
+		<property name="visibleTo">
+			<value>2015-03-19</value>
+		</property>
+		<property name="leaf">
+			<value>false</value>
+		</property>
+
+		<property name="mode">
+			<value>SIMPLE_LIST</value>
+		</property>
+		<property name="url">
+			<null />
+		</property>
+		<property name="orderno" value="0" />
+	</bean>
+	<bean id="r18" class="org.j4.model.Rubric">
+		<constructor-arg>
+			<ref bean="r17" />
+		</constructor-arg>
+		<constructor-arg>
+			<value>导航</value>
+		</constructor-arg>
+
+		<property name="online">
+			<value>true</value>
+		</property>
+		<property name="abstr">
+			<value></value>
+		</property>
+		<property name="body">
+			<value></value>
+		</property>
+		<property name="date">
+			<value>2013-09-20</value>
+		</property>
+		<property name="visibleForever">
+			<value>true</value>
+		</property>
+		<property name="visibleFrom">
+			<value>2013-09-20</value>
+		</property>
+		<property name="visibleTo">
+			<value>2015-03-19</value>
+		</property>
+
+		<property name="leaf">
+			<value>false</value>
+		</property>
+		<property name="mode">
+			<value>SIMPLE_LIST</value>
+		</property>
+		<property name="url">
+			<null />
+		</property>
+		<property name="orderno" value="0" />
+	</bean>
+	
+	<bean id="r29" class="org.j4.model.Rubric">
+		<constructor-arg>
+			<ref bean="r17" />
+		</constructor-arg>
+		<constructor-arg>
+			<value>TEST</value>
+		</constructor-arg>
+		<property name="online">
+			<value>true</value>
+		</property>
+
+		<property name="abstr">
+			<value></value>
+		</property>
+		<property name="body">
+			<value></value>
+		</property>
+		<property name="date">
+			<value>2013-09-20</value>
+		</property>
+		<property name="visibleForever">
+			<value>true</value>
+		</property>
+		<property name="visibleFrom">
+			<value>2013-09-20</value>
+		</property>
+		<property name="visibleTo">
+			<value>2015-03-19</value>
+		</property>
+		<property name="leaf">
+			<value>false</value>
+		</property>
+
+		<property name="mode">
+			<value>SIMPLE_LIST</value>
+		</property>
+		<property name="url">
+			<null />
+		</property>
+		<property name="orderno" value="3" />
+	</bean>
+	<bean id="r19" class="org.j4.model.Rubric">
+		<constructor-arg>
+			<ref bean="r18" />
+		</constructor-arg>
+		<constructor-arg>
+			<value>关于我们</value>
+		</constructor-arg>
+
+		<property name="online">
+			<value>true</value>
+		</property>
+		<property name="abstr">
+			<value></value>
+		</property>
+		<property name="body">
+			<value>
+			阿里云计算有限公司成立于2009年9月10日，在杭州、北京和硅谷等地设有研发中心和运营机构。阿里云的目标是打造互联网数据分享第一平台，成为以数据为中心的云计算服务公司。
+			在未来的互联网中，云计算将会成为一种随时、随地，并根据需要而提供的公共服务。高效的绿色数据中心以及能支持不同互联网应用的大规模分布式存储和计算是营造下一代互联网服务平台最基本的核心技术。
+			阿里云致力于打造公共、开放的云计算服务平台。我们将借助技术的创新，不断提升计算能力与规模效益，将云计算变成真正意义上的公共服务。与此同时，我们将通过aliyun.com，用互联网的方式使得大家可以便捷的按需获取阿里云的云计算产品与服务。
+			我们希望更多的合作伙伴、中小企业、开发者能够受益于云计算带来的便利和价值，从而促进云生态系统的健康发展。
+			地址：杭州市余杭区文一西路969号淘宝城
+			电话：4006003456
+			</value>
+		</property>
+
+		<property name="date">
+			<value>2013-09-20</value>
+		</property>
+		<property name="visibleForever">
+			<value>true</value>
+		</property>
+		<property name="visibleFrom">
+			<value>2013-09-20</value>
+		</property>
+		<property name="visibleTo">
+			<value>2015-03-19</value>
+		</property>
+		<property name="leaf">
+			<value>false</value>
+		</property>
+		<property name="mode">
+			<value>SIMPLE_LIST</value>
+		</property>
+
+		<property name="url">
+			<null />
+		</property>
+		<property name="orderno" value="0" />
+	</bean>
+	<bean id="r20" class="org.j4.model.Rubric">
+		<constructor-arg>
+			<ref bean="r18" />
+		</constructor-arg>
+		<constructor-arg>
+			<value>获取帮助</value>
+		</constructor-arg>
+		<property name="online">
+			<value>true</value>
+		</property>
+
+		<property name="abstr">
+			<value></value>
+		</property>
+		<property name="body">
+			<value>当您的计算机遇到问题时，远程协助提供了一种获取帮助的途径。如果您是一位经验丰富的用户，甚至还可以通过远程协助直接向您的朋友或家人提供帮助。</value>
+		</property>
+
+		<property name="date">
+			<value>2013-09-20</value>
+		</property>
+		<property name="visibleForever">
+			<value>true</value>
+		</property>
+		<property name="visibleFrom">
+			<value>2013-09-20</value>
+		</property>
+		<property name="visibleTo">
+			<value>2015-03-19</value>
+		</property>
+		<property name="leaf">
+			<value>false</value>
+		</property>
+		<property name="mode">
+			<value>SIMPLE_LIST</value>
+		</property>
+
+		<property name="url">
+			<null />
+		</property>
+		<property name="orderno" value="1" />
+	</bean>
+	<bean id="r33" class="org.j4.model.Rubric">
+		<constructor-arg>
+			<ref bean="r29" />
+		</constructor-arg>
+		<constructor-arg>
+			<value>赞助程序猿</value>
+		</constructor-arg>
+		<property name="online">
+			<value>true</value>
+		</property>
+		<property name="abstr">
+			<value>&lt;p&gt;&lt;span style=&quot;color: rgb(255, 0, 0); font-size: large;&quot;&gt;开源软件需要您的大力支持&lt;/span&gt;&lt;/p&gt;</value>
+		</property>
+		<property name="body">
+			<value>&lt;p&gt;&lt;span style=&quot;font-size: large;&quot;&gt;如果当前的代码和程序给您的学习和工作带来了点子，请赞助一下&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size: large;&quot;&gt;如果您觉得该CMS简单易用，并准备部署在您的服务器上，请赞助一下&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size: large;&quot;&gt;如果您觉得程序猿可怜，请赞助一下&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size: large;&quot;&gt;哪怕一元，两元，请支持开源&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size: large;&quot;&gt;支付宝钱包扫面一下二维码，赞助开源&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;img border=&quot;0&quot; src=&quot;/bamboo/upload/files/pay.png&quot; width=&quot;512&quot; height=&quot;512&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+		</property>
+
+		<property name="date">
+			<value>2013-09-21</value>
+		</property>
+		<property name="visibleForever">
+			<value>true</value>
+		</property>
+		<property name="visibleFrom">
+			<value>2013-09-21</value>
+		</property>
+		<property name="visibleTo">
+			<value>2020-03-20</value>
+		</property>
+		<property name="leaf">
+			<value>false</value>
+		</property>
+		<property name="mode">
+			<value>NONE</value>
+		</property>
+
+		<property name="url">
+			<null />
+		</property>
+		<property name="orderno" value="0" />
+	</bean>
+	<bean id="r30" class="org.j4.model.Rubric">
+
+		<constructor-arg>
+			<ref bean="r29" />
+		</constructor-arg>
+		<constructor-arg>
+			<value>站点</value>
+		</constructor-arg>
+		<property name="online">
+			<value>true</value>
+		</property>
+		<property name="abstr">
+			<value></value>
+		</property>
+		<property name="body">
+			<value>一个站点（site）是一个存储区，它存储了一个网站包含的所有文件。通俗一点的说，一个站点就是一个网站所有内容所存放的文件夹。Dreamweaver的使用是以站点为基础的，必须为每一个要处理的网站建立一个本地站点。</value>
+		</property>
+
+		<property name="date">
+			<value>2013-09-20</value>
+		</property>
+		<property name="visibleForever">
+			<value>true</value>
+		</property>
+		<property name="visibleFrom">
+			<value>2013-09-20</value>
+		</property>
+		<property name="visibleTo">
+			<value>2015-03-19</value>
+		</property>
+		<property name="leaf">
+			<value>false</value>
+		</property>
+		<property name="mode">
+			<value>NONE</value>
+		</property>
+
+		<property name="url">
+			<null />
+		</property>
+		<property name="orderno" value="3" />
+	</bean>
+	<bean id="r31" class="org.j4.model.Rubric">
+		<constructor-arg>
+			<ref bean="r29" />
+		</constructor-arg>
+		<constructor-arg>
+			<value>专栏</value>
+		</constructor-arg>
+		<property name="online">
+			<value>true</value>
+		</property>
+
+		<property name="abstr">
+			<value></value>
+		</property>
+		<property name="body">
+			<value>报刊上专载某类稿件的栏目。如：国际专栏；经济专栏。</value>
+		</property>
+		<property name="date">
+			<value>2013-09-20</value>
+		</property>
+		<property name="visibleForever">
+			<value>true</value>
+		</property>
+		<property name="visibleFrom">
+			<value>2013-09-20</value>
+		</property>
+
+		<property name="visibleTo">
+			<value>2015-03-19</value>
+		</property>
+		<property name="leaf">
+			<value>false</value>
+		</property>
+		<property name="mode">
+			<value>NONE</value>
+		</property>
+		<property name="url">
+			<null />
+		</property>
+		<property name="orderno" value="2" />
+	</bean>
+
+	<bean id="r32" class="org.j4.model.Rubric">
+		<constructor-arg>
+			<ref bean="r29" />
+		</constructor-arg>
+		<constructor-arg>
+			<value>宝箱</value>
+		</constructor-arg>
+		<property name="online">
+			<value>true</value>
+		</property>
+		<property name="abstr">
+			<value></value>
+		</property>
+		<property name="body">
+			<value>自定义组件</value>
+		</property>
+
+		<property name="date">
+			<value>2013-09-21</value>
+		</property>
+		<property name="visibleForever">
+			<value>true</value>
+		</property>
+		<property name="visibleFrom">
+			<value>2013-09-21</value>
+		</property>
+		<property name="visibleTo">
+			<value>2015-03-20</value>
+		</property>
+		<property name="leaf">
+			<value>false</value>
+		</property>
+		<property name="mode">
+			<value>NONE</value>
+		</property>
+
+		<property name="url">
+			<null />
+		</property>
+		<property name="orderno" value="3" />
+	</bean>
+	
+	<bean id="sitePrototype" class="org.j4.model.Site" autowire="no">
+		<constructor-arg>
+			<ref bean="r17" />
+		</constructor-arg>
+
+		<property name="boxes">
+			<list>
+				<bean class="org.j4.model.BannerBox">
+					<property name="boxId" value="rightBanner1" />
+					<property name="banners">
+						<list>
+							<bean class="org.j4.model.Banner">
+								<property name="banner" value="/img/banner-blue.png" />
+								<property name="url" value="http://springframework.org" />
+							</bean>
+						</list>
+					</property>
+				</bean>
+				<bean class="org.j4.model.BannerBox">
+					<property name="boxId" value="rightBanner2" />
+					<property name="banners">
+						<list>
+							<bean class="org.j4.model.Banner">
+
+								<property name="banner" value="/img/banner-orange.png" />
+								<property name="url" value="http://hibernate.org" />
+							</bean>
+						</list>
+					</property>
+				</bean>
+				<bean class="org.j4.model.BannerBox">
+					<property name="boxId" value="rightBanner3" />
+					<property name="banners">
+
+						<list>
+							<bean class="org.j4.model.Banner">
+								<property name="banner" value="/img/banner-green.png" />
+								<property name="url" value="http://cms.lt" />
+							</bean>
+						</list>
+					</property>
+				</bean>
+				<bean class="org.j4.model.ImageBox">
+
+					<property name="boxId" value="topImageBox1" />
+					<property name="image" value="/img/header.jpg" />
+				</bean>
+				<bean class="org.j4.model.TextBox">
+					<property name="boxId" value="topTextBox1" />
+					<property name="title" value="将网站建设简单到底！" />
+					<property name="body"
+						value="&lt;p&gt;开源CMS需要你的赞助.&lt;/p&gt;
+&lt;p&gt;将内容管理简单进行到底，鼠标一点，轻松建设属于你自己的网站。&lt;/p&gt;
+&lt;p&gt;该开源CMS使用技术，SpringMVC，Spring Security. Hibernate jQuery及其扩展插件 ，Tiles2和FreeMark。伪静态，.html请求，基于.html页面与数据库缓存Ehcache，顶住高访问量，页面缓存可设置启用关闭。&lt;/p&gt;" />
+				</bean>
+				<bean class="org.j4.model.TextBox">
+
+					<property name="boxId" value="ultraTextBox2" />
+					<property name="title" value="关于例子" />
+					<property name="body" value="&lt;p&gt;例子中使用的数据为系统初始化配置的数据，获取权限后可修改。" />
+				</bean>
+				<bean class="org.j4.model.RubricBox">
+					<property name="boxId" value="cultureBox" />
+					<property name="rubric" ref="r29" />
+				</bean>
+				<bean class="org.j4.model.SlideshowBox">
+					<property name="boxId" value="indexSlides" />
+
+					<property name="slides">
+						<list>
+							<bean class="org.j4.model.Slide">
+								<property name="title" value="CMS" />
+								<property name="body"
+									value="&lt;div id=&quot;card-container&quot; class=&quot;mod-top&quot; style=&quot;clear: both;&quot;&gt;
+&lt;div class=&quot;card-summary nslog-area clearfix&quot; data-nslog-type=&quot;72&quot;&gt;
+&lt;div class=&quot;card-summary-content&quot;&gt;
+&lt;div class=&quot;para&quot;&gt;CMS是Content Management System的缩写，意为&quot;内容管理系统&quot;，一般采用基于模板方式的设计思想，可以 加快网站开发的速度和减少开发的成本。CMS的功能并不只限于文本处理，它也可以处理图片、Flash动画、声像流、图像甚至电 子邮件档案。&lt;/div&gt;
+&lt;div class=&quot;para&quot;&gt;CMS其实是一个很广泛的称呼，从一般的博客程序，新闻发布程序，到综合性的网站管理程序都可以被称为 内容管理系统。&lt;/div&gt;
+&lt;div class=&quot;para&quot;&gt;
+&lt;div class=&quot;para&quot;&gt;CMS产生的过程背景随着网络应用的丰富和发展，很多网站往往不能迅速跟进大量信息衍生及业务模式变革 的脚步，常常 需要花费许多时间、人力和物力来处理信息更新和维护工作；遇到网站扩充的时候，整合内外网及分支网站的工 作就变得更加复杂，甚至还需重新建设网站；如此下 去，用户始终在一个高成本、低效率的循环中升级、整合。&lt;/div&gt;
+&lt;div class=&quot;para&quot;&gt;于是，我们听到许多用户这样的反馈：&lt;/div&gt;
+&lt;div class=&quot;para&quot;&gt;&lt;a href=&quot;http://baike.baidu.com/view/305736.htm&quot; target=&quot;_blank&quot;&gt;页面&lt;/a&gt;制作无序，网站&lt;a href=&quot;http://baike.baidu.com/view/136139.htm&quot; target=&quot;_blank&quot;&gt;风格&lt;/a&gt;不统一，大量信息堆积，发布显得异常沉重&lt;/div&gt;
+&lt;div class=&quot;para&quot;&gt;内容繁杂，手工管理效率低下，手工链接视音频信息经常无法实现；&lt;/div&gt;
+&lt;div class=&quot;para&quot;&gt;应用难度较高，许多工作需要技术人员配合才能完成，角色分工不明确&lt;/div&gt;
+&lt;div class=&quot;para&quot;&gt;改版工作量大，系统扩展能力差，集成其它应用时更是降低了灵活性；&lt;/div&gt;
+&lt;div class=&quot;para&quot;&gt;对于网站建设和信息发布人员来说，他们最关注的系统的易用性和功能的完善性，因此，这对网站建设和信 息发布工具提出了一个很高的要求。&lt;/div&gt;
+&lt;div class=&quot;para&quot;&gt;首先，角色定位明确，以充分保证工作人员的工作效率；其次，功能完整，满足各门道&quot;把关人&quot;应用所需， 使信息发布准确无误。比如，为编辑、美工、主编及运维人员设置权限和实时管理功能。&lt;/div&gt;
+&lt;div class=&quot;para&quot;&gt;此外，保障网站架构的安全性也是用户关注的焦点。能有效管理网站访问者的登陆权限，使内网数据库不受 攻击，从而时刻保证网站的安全稳定，免于用户的后顾之忧。&lt;/div&gt;
+&lt;div class=&quot;para&quot;&gt;根据以上需求，一套专业的内容管理系统CMS应运而生，来有效解决用户网站建设与信息发布中常见的问题 和需求。对网站内容管理是该软件的最大优势，它流程完善、功能丰富，可把稿件分门别类并授权给合法用户编辑管理，而不需 要用户去理会那些难懂的SQL语法。&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;" />
+								<property name="orderno" value="0" />
+							</bean>
+							<bean class="org.j4.model.Slide">
+								<property name="title" value="Spring" />
+								<property name="body"
+									value="&lt;div class=&quot;para&quot;&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;a name=&quot;ref_[1]_11192342&quot;&gt;&lt;/a&gt;Spring是一个 开源框架，Spring 是于2003 年兴起的一 个轻量级的Java 开发框架，由Rod Johnson 在其著作Expert One-On-One J2EE Development and Design中阐述的部分理念和原 型衍生而来。它是为了解决企业应用开发的复杂性而创建的。Spring使用基本的JavaBean来完成以前只可能由 EJB完成的事情。 然而，Spring的用途不仅限于&lt;a href=&quot;http://baike.baidu.com/view/899.htm&quot; target=&quot;_blank&quot;&gt;服务器&lt;/a&gt;端的开发。从简 单性、可测试性和松耦合的角度而言，任何Java应用都可以从Spring中受益。&lt;/div&gt;
+&lt;div class=&quot;para&quot;&gt;◆目的：解决企业应用开发的复杂性&lt;/div&gt;
+&lt;div class=&quot;para&quot;&gt;◆功能：使用基本的JavaBean代替EJB，并提供了更多的企业&lt;a href=&quot;http://baike.baidu.com/view/220910.htm&quot; target=&quot;_blank&quot;&gt;应用&lt;/a&gt;功能&lt;/div&gt;
+&lt;div class=&quot;para&quot;&gt;◆范围：任何Java应用&lt;/div&gt;
+&lt;div class=&quot;para&quot;&gt;简单来说，Spring是一个轻量级的&lt;a href=&quot;http://baike.baidu.com/view/1486379.htm&quot; target=&quot;_blank&quot;&gt;控制反转&lt;/a&gt;（&lt;a href=&quot;http://baike.baidu.com/view/146665.htm&quot; target=&quot;_blank&quot;&gt;IoC&lt;/a&gt;）和面向切 面（&lt;a href=&quot;http://baike.baidu.com/view/73626.htm&quot; target=&quot;_blank&quot;&gt;AOP&lt;/a&gt;）的&lt;a href=&quot;http://baike.baidu.com/view/864334.htm&quot; target=&quot;_blank&quot;&gt;容器&lt;/a&gt;框架。&lt;/div&gt;
+&lt;div class=&quot;para&quot;&gt;◆&lt;strong&gt;轻量&lt;/strong&gt;——从大小与开销两方面而言Spring都是轻量的。完整的Spring&lt;a href=&quot;http://baike.baidu.com/view/66971.htm&quot; target=&quot;_blank&quot;&gt;框架&lt;/a&gt;可以在一个大小只有1MB多的JAR文件里发布。并 且Spring所需的处理开销也是微不足道的。此外，Spring是非侵入式的：典型地，Spring应用中的&lt;a href=&quot;http://baike.baidu.com/view/2387.htm&quot; target=&quot;_blank&quot;&gt;对象&lt;/a&gt;不依赖于Spring的特定类。&lt;/div&gt;
+&lt;div class=&quot;para&quot;&gt;◆&lt;a href=&quot;http://baike.baidu.com/view/1486379.htm&quot; target=&quot;_blank&quot;&gt;控制反转 &lt;/a&gt;——Spring通过一种称作控制反转（IoC）的技术促进了松耦合。当应用了IoC，一个&lt;a href=&quot;http://baike.baidu.com/view/2387.htm&quot; target=&quot;_blank&quot;&gt;对象&lt;/a&gt;依赖的其它对象会通过被动的方式传递进来，而不 是这个对象自己创建或者查找依赖对象。你可以认为IoC与JNDI相反——不是&lt;a href=&quot;http://baike.baidu.com/view/2387.htm&quot; target=&quot;_blank&quot;&gt;对象&lt;/a&gt;从容器中查找依赖，而是容器在对象初始化时不等 对象请求就主动将依赖传递给它。&lt;/div&gt;
+&lt;div class=&quot;para&quot;&gt;◆&lt;strong&gt;面向切面&lt;/strong&gt;——Spring提供了&lt;a href=&quot;http://baike.baidu.com/view/1865230.htm&quot; target=&quot;_blank&quot;&gt;面向切面编程&lt;/a&gt;的丰富支持，允许通过分离应用的业 务&lt;a href=&quot;http://baike.baidu.com/view/1838.htm&quot; target=&quot;_blank&quot;&gt;逻辑&lt;/a&gt;与&lt;a href=&quot;http://baike.baidu.com/view/25302.htm&quot; target=&quot;_blank&quot;&gt;系统&lt;/a&gt;级&lt;a href=&quot;http://baike.baidu.com/view/133203.htm&quot; target=&quot;_blank&quot;&gt;服务&lt;/a&gt;（例如审计（auditing）和&lt;a href=&quot;http://baike.baidu.com/view/121511.htm&quot; target=&quot;_blank&quot;&gt;事务&lt;/a&gt;（transaction）管理）进行&lt;a href=&quot;http://baike.baidu.com/view/2424328.htm&quot; target=&quot;_blank&quot;&gt;内聚性&lt;/a&gt;的开发。&lt;a href=&quot;http://baike.baidu.com/view/5314991.htm&quot; target=&quot;_blank&quot;&gt;应用对象&lt;/a&gt;只实现它们应该做的——完成 业务逻辑——仅此而已。它们并不负责（甚至是意识）其它的系统级关注点，例如日志或&lt;a href=&quot;http://baike.baidu.com/view/121511.htm&quot; target=&quot;_blank&quot;&gt;事务&lt;/a&gt;支持。&lt;/div&gt;
+&lt;div class=&quot;para&quot;&gt;◆&lt;strong&gt;容器&lt;/strong&gt;——Spring包含并管理&lt;a href=&quot;http://baike.baidu.com/view/5314991.htm&quot; target=&quot;_blank&quot;&gt;应用对象&lt;/a&gt;的配置和生命周期，在这个意义上它是一 种容器，你可以配置你的每个bean如何被创建——基于一个可配置&lt;a href=&quot;http://baike.baidu.com/view/228368.htm&quot; target=&quot;_blank&quot;&gt;原型&lt;/a&gt;（prototype），你的bean可以创建一个单独的 实例或者每次需要时都生成一个新的实例——以及它们是如何相互关联的。然而，Spring不应该被混同于传统的重量 级的EJB容器，它们经常是庞大与笨重的，难以使用。&lt;/div&gt;
+&lt;div class=&quot;para&quot;&gt;◆&lt;a href=&quot;http://baike.baidu.com/view/66971.htm&quot; target=&quot;_blank&quot;&gt;框架&lt;/a&gt;——Spring 可以将简单的&lt;a href=&quot;http://baike.baidu.com/view/379950.htm&quot; target=&quot;_blank&quot;&gt;组件&lt;/a&gt;配置、组合成为复杂的应用。 在Spring中，&lt;a href=&quot;http://baike.baidu.com/view/5314991.htm&quot; target=&quot;_blank&quot;&gt;应用对象&lt;/a&gt;被声明式地组合，典型地 是在一个XML文件里。Spring也提供了很多基础功能（&lt;a href=&quot;http://baike.baidu.com/view/3871410.htm&quot; target=&quot;_blank&quot;&gt;事务管理&lt;/a&gt;、持久化框架集成等等），将应用逻辑的开发留给了你。&lt;/div&gt;
+&lt;div class=&quot;para&quot;&gt;◆MVC——Spring的作用是整合，但不仅仅限于整合，Spring 框架可以被看做是一个企业解决方 案级别的框&lt;br&gt;　 　架。客户端发送请求，服务器控制器（由DispatcherServlet实现的)完成请求的转发，控制器调用一个 用于映射的类 HandlerMapping，该类用于将请求映射到对应的处理器来处理请求。HandlerMapping 将请求映射到对应的处理器 Controller（相当于Action）在Spring 当中如果写一些处理器组件，一般实现Controller 接口，在Controller 中就可以调用 一些Service 或DAO 来进行数据操作 ModelAndView 用于存放从DAO 中取出的数据，还可以存放响应视图的一些数据。 如果想 将处理结果返回给用户，那么在Spring 框架中还提供一个视图组件ViewResolver，该组件根据Controller 返回的标示，找到对 应的视图，将响应response 返回给用户。&lt;/div&gt;
+&lt;div class=&quot;para&quot;&gt;所有Spring的这些特征使你能够编写更干净、更可管理、并且更易于测试的代码。它们也为Spring中的各种 模块提供了基础支持。&lt;/div&gt; " />
+								<property name="orderno" value="10" />
+							</bean>
+							<bean class="org.j4.model.Slide">
+								<property name="title" value="Hibernate" />
+								<property name="body"
+									value="&lt;p&gt;&lt;span class=&quot;slideadmin&quot;&gt; 让时间回到2001年，地点是澳大利亚悉尼的Clarence Street有一家叫做Cirrus Technologies 的公司，这是一家做J2EE企业级应用开发和咨询的公司，在会议桌上一个小伙子和老板正在进行着激烈的讨论。&lt;br&gt;　　小伙 子：&quot;老板，我总觉得现在开发的效率太低了，我用了&lt;a href=&quot;http://baike.baidu.com/view/3542.htm&quot; target=&quot;_blank&quot;&gt;EJB&lt;/a&gt;的Entity bean 1.1时，我总觉得我浪费了好多时间在处理Entity Bean的体系架构上，却没有花时间 在核心业务逻辑的开发上，而且CMP给我们的限制太多了&quot;。&lt;br&gt;　　老板：&quot;Gavin，别傻了，EJB是业界的标准，也是最流行 的技术，而且我们公司是IBM的合作伙伴。如果有问题，问题就是我们还没有适应这样的开发模式&quot;。&lt;br&gt;　　小伙子：&quot;不， 我觉得肯定有更好的解决的方案。我们可以设计出比Entity Bean更好的方案&quot;。&lt;br&gt;　　老板：&quot;哦，Gavin，我知道你很聪明 ，开发水平也不错。但是开发这样的系统太难了，而且你根本就没有用SQL开发过任何数据库系统。不要想这样一个不现实的目 标啦！&quot;&lt;br&gt;　　小伙子皱了皱眉，说道：&quot;不，我相信我有能力开发出这个系统。我的想法绝对是可行的。&quot;&lt;br&gt;　 　（注 ：以上场景纯属虚构，但至少以下内容完全属实：Gavin King开发hibernate的动机有两个：发现CMP太烂；赢得对老板的争执。 Gavin King当时没有任何用SQL开发数据库的经验，Gavin King开发hibernate的第一件事是去街上买了本SQL基础的书）&lt;br&gt; 　　也许Cirrus Technologies的老板做梦也想不到两年以后，这个小伙子开发出的那个产品会成为全世界最流行的O/R Mapping 工具，而那个对SQL和数据库一窍不通的小伙子居然会成为全世界J2EE数据库解决方案的领导者。&lt;br&gt;　 　这就是Gavin King ，一个充满激情、脾气很倔、永不言败的人。他的成就也许全世界搞Java的人都知道：他是hibernate的创始人；他是EJB 3.0的 Entity bean specification的实际领导人（sun任命的领导人应该是Linda DeMichiel）；他也是那本经典的书hibernate in action的作者；他也参加了XDoclet和Middlegen的开发；他在全世界各种著名的会议(TheServerSide Symposium等)进行演讲和 讲座。&lt;/span&gt;&lt;/p&gt;" />
+								<property name="orderno" value="20" />
+							</bean>
+							<bean class="org.j4.model.Slide">
+								<property name="title" value="Jquery" />
+								<property name="body"
+									value="&lt;div class=&quot;para&quot;&gt;jQuery是一个兼容多浏览器的&lt;a href=&quot;http://baike.baidu.com/view/16168.htm&quot; target=&quot;_blank&quot;&gt;javascript&lt;/a&gt;框架，核心理念是write less,do more(写得更少,做得更多)。jQuery在2006年1月由美国人&lt;a href=&quot;http://baike.baidu.com/view/3141971.htm&quot; target=&quot;_blank&quot;&gt;John Resig&lt;/a&gt;在纽约的&lt;a href=&quot;http://baike.baidu.com/view/1135515.htm&quot; target=&quot;_blank&quot;&gt;barcamp&lt;/a&gt;发布，吸引了来自世界各地的众多 JavaScript高手加入，由Dave Methvin率领团队进行开发。如今，&lt;a href=&quot;http://baike.baidu.com/view/1020297.htm&quot; target=&quot;_blank&quot;&gt;jQuery&lt;/a&gt;已经成为最流行的javascript框架，在世界前10000个访问最多的网站中，有超过55%在使用jQuery 。&lt;/div&gt;
+&lt;div class=&quot;para&quot;&gt;jQuery是免费、开源的，使用&lt;a href=&quot;http://baike.baidu.com/view/74918.htm&quot; target=&quot;_blank&quot;&gt;MIT&lt;/a&gt;许可协议。jQuery的&lt;a href=&quot;http://baike.baidu.com/view/135635.htm&quot; target=&quot;_blank&quot;&gt;语法 &lt;/a&gt;设计可以使开发者更加便捷，例如操作&lt;a href=&quot;http://baike.baidu.com/view/55621.htm&quot; target=&quot;_blank&quot;&gt;文档&lt;/a&gt;对 象、选择&lt;a href=&quot;http://baike.baidu.com/view/14806.htm&quot; target=&quot;_blank&quot;&gt;DOM&lt;/a&gt;元素、制作&lt;a href=&quot;http://baike.baidu.com/view/7262.htm&quot; target=&quot;_blank&quot;&gt;动画&lt;/a&gt;效果、事件处理、使用&lt;a href=&quot;http://baike.baidu.com/view/1641.htm&quot; target=&quot;_blank&quot;&gt;Ajax&lt;/a&gt;以及其他功能。除此以外，jQuery提供API让开发 者编写插件。其模块化的使用方式使开发者可以很轻松的开发出功能强大的静态或动态网页。&lt;/div&gt;" />
+								<property name="orderno" value="30" />
+							</bean>
+							<bean class="org.j4.model.Slide">
+								<property name="title" value="各种工具，插件" />
+								<property name="body"
+									value="&lt;p&gt;&lt;span class=&quot;slideadmin&quot;&gt; 各种工具，插件 &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;slideadmin&quot;&gt;jeditable&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;什么是即时编辑？一般的流程是这样的，当用户点击网页上的文字时，该文字就会出现在一个编辑框中，用户对文字进行修 改完成后点击提交按钮，新的文本将发送到服务器上，然后表单消失，显示最新编辑的文本。&lt;/p&gt;
+&lt;p&gt;你可以通过这个&lt;a href=&quot;http://www.appelsiini.net/projects/jeditable/default.html&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;演示页面&lt;/a&gt;来亲自体验下。&lt;/p&gt;
+&lt;p&gt;基本的使用方法如下：&lt;/p&gt;
+&lt;p&gt;首先编辑一个 html 文件，包含这么一段：&lt;/p&gt;
+&lt;div id=&quot;highlighter_483787&quot; class=&quot;syntaxhighlighter  &quot;&gt;
+&lt;div class=&quot;lines&quot;&gt;
+&lt;div class=&quot;line alt1&quot;&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;number&quot;&gt;&lt;code&gt;1&lt;/code&gt;&lt;/td&gt;
+&lt;td class=&quot;content&quot;&gt;&lt;code class=&quot;plain&quot;&gt;&amp;lt;&lt;/code&gt;&lt;code class=&quot;keyword&quot;&gt;div&lt;/code&gt; &lt;code class=&quot;color1&quot;&gt;class&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;=&lt;/code&gt;&lt;code class=&quot;string&quot;&gt;&quot;edit&quot;&lt;/code&gt; &lt;code class=&quot;color1&quot;&gt;id&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;=&lt;/code&gt;&lt;code class=&quot;string&quot;&gt;&quot;div_1&quot;&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;&amp;gt;Dolor&amp;lt;/&lt;/code&gt;&lt;code class=&quot;keyword&quot;&gt;div&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&quot;line alt2&quot;&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;number&quot;&gt;&lt;code&gt;2&lt;/code&gt;&lt;/td&gt;
+&lt;td class=&quot;content&quot;&gt;&lt;code class=&quot;plain&quot;&gt;&amp;lt;&lt;/code&gt;&lt;code class=&quot;keyword&quot;&gt;div&lt;/code&gt; &lt;code class=&quot;color1&quot;&gt;class&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;=&lt;/code&gt;&lt;code class=&quot;string&quot;&gt;&quot;edit_area&quot;&lt;/code&gt; &lt;code class=&quot;color1&quot;&gt;id&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;=&lt;/code&gt;&lt;code class=&quot;string&quot;&gt;&quot;div_2&quot;&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;&amp;gt;Lorem ipsum dolor sit amet, consectetuer &lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&quot;line alt1&quot;&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;number&quot;&gt;&lt;code&gt;3&lt;/code&gt;&lt;/td&gt;
+&lt;td class=&quot;content&quot;&gt;&lt;code class=&quot;plain&quot;&gt;adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore &lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&quot;line alt2&quot;&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;number&quot;&gt;&lt;code&gt;4&lt;/code&gt;&lt;/td&gt;
+&lt;td class=&quot;content&quot;&gt;&lt;code class=&quot;plain&quot;&gt;magna aliquam erat volutpat.&amp;lt;/&lt;/code&gt;&lt;code class=&quot;keyword&quot;&gt;div&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;然后我们使用如下的 JS 代码来实现即时编辑（要先引入 Jeditable 插件）：&lt;/p&gt;
+&lt;div id=&quot;highlighter_374773&quot; class=&quot;syntaxhighlighter  &quot;&gt;
+&lt;div class=&quot;lines&quot;&gt;
+&lt;div class=&quot;line alt1&quot;&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;number&quot;&gt;&lt;code&gt;1&lt;/code&gt;&lt;/td&gt;
+&lt;td class=&quot;content&quot;&gt;&lt;code class=&quot;plain&quot;&gt;$(document).ready(&lt;/code&gt;&lt;code class=&quot;keyword&quot;&gt;function&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;() {&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&quot;line alt2&quot;&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;number&quot;&gt;&lt;code&gt;2&lt;/code&gt;&lt;/td&gt;
+&lt;td class=&quot;content&quot;&gt;&lt;code class=&quot;spaces&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;$(&lt;/code&gt;&lt;code class=&quot;string&quot;&gt;&apos;.edit&apos;&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;).editable(&lt;/code&gt;&lt;code class=&quot;string&quot;&gt;&apos;http://www.example.com/save.php&apos;&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;);&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&quot;line alt1&quot;&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;number&quot;&gt;&lt;code&gt;3&lt;/code&gt;&lt;/td&gt;
+&lt;td class=&quot;content&quot;&gt;&lt;code class=&quot;plain&quot;&gt;});&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;实现不同内容的编辑以及更多的定制项：&lt;/p&gt;
+&lt;div class=&quot;line alt1&quot;&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;number&quot;&gt;&lt;code&gt;01&lt;/code&gt;&lt;/td&gt;
+&lt;td class=&quot;content&quot;&gt;&lt;code class=&quot;plain&quot;&gt;$(document).ready(&lt;/code&gt;&lt;code class=&quot;keyword&quot;&gt;function&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;() {&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&quot;line alt2&quot;&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;number&quot;&gt;&lt;code&gt;02&lt;/code&gt;&lt;/td&gt;
+&lt;td class=&quot;content&quot;&gt;&lt;code class=&quot;spaces&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;$(&lt;/code&gt;&lt;code class=&quot;string&quot;&gt;&apos;.edit&apos;&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;).editable(&lt;/code&gt;&lt;code class=&quot;string&quot;&gt;&apos;http://www.example.com/save.php&apos;&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;, {&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&quot;line alt1&quot;&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;number&quot;&gt;&lt;code&gt;03&lt;/code&gt;&lt;/td&gt;
+&lt;td class=&quot;content&quot;&gt;&lt;code class=&quot;spaces&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;indicator : &lt;/code&gt;&lt;code class=&quot;string&quot;&gt;&apos;Saving...&apos;&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;,&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&quot;line alt2&quot;&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;number&quot;&gt;&lt;code&gt;04&lt;/code&gt;&lt;/td&gt;
+&lt;td class=&quot;content&quot;&gt;&lt;code class=&quot;spaces&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;tooltip&amp;nbsp;&amp;nbsp; : &lt;/code&gt;&lt;code class=&quot;string&quot;&gt;&apos;Click to edit...&apos;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&quot;line alt1&quot;&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;number&quot;&gt;&lt;code&gt;05&lt;/code&gt;&lt;/td&gt;
+&lt;td class=&quot;content&quot;&gt;&lt;code class=&quot;spaces&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;});&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&quot;line alt2&quot;&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;number&quot;&gt;&lt;code&gt;06&lt;/code&gt;&lt;/td&gt;
+&lt;td class=&quot;content&quot;&gt;&lt;code class=&quot;spaces&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;$(&lt;/code&gt;&lt;code class=&quot;string&quot;&gt;&apos;.edit_area&apos;&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;).editable(&lt;/code&gt;&lt;code class=&quot;string&quot;&gt;&apos;http://www.example.com/save.php&apos;&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;, { &lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&quot;line alt1&quot;&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;number&quot;&gt;&lt;code&gt;07&lt;/code&gt;&lt;/td&gt;
+&lt;td class=&quot;content&quot;&gt;&lt;code class=&quot;spaces&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;type&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; : &lt;/code&gt;&lt;code class=&quot;string&quot;&gt;&apos;textarea&apos;&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;,&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&quot;line alt2&quot;&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;number&quot;&gt;&lt;code&gt;08&lt;/code&gt;&lt;/td&gt;
+&lt;td class=&quot;content&quot;&gt;&lt;code class=&quot;spaces&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;cancel&amp;nbsp;&amp;nbsp;&amp;nbsp; : &lt;/code&gt;&lt;code class=&quot;string&quot;&gt;&apos;Cancel&apos;&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;,&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&quot;line alt1&quot;&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;number&quot;&gt;&lt;code&gt;09&lt;/code&gt;&lt;/td&gt;
+&lt;td class=&quot;content&quot;&gt;&lt;code class=&quot;spaces&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;submit&amp;nbsp;&amp;nbsp;&amp;nbsp; : &lt;/code&gt;&lt;code class=&quot;string&quot;&gt;&apos;OK&apos;&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;,&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&quot;line alt2&quot;&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;number&quot;&gt;&lt;code&gt;10&lt;/code&gt;&lt;/td&gt;
+&lt;td class=&quot;content&quot;&gt;&lt;code class=&quot;spaces&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;indicator : &lt;/code&gt;&lt;code class=&quot;string&quot;&gt;&apos;&amp;lt;img src=&quot;img/indicator.gif&quot;&amp;gt;&apos;&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;,&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&quot;line alt1&quot;&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;number&quot;&gt;&lt;code&gt;11&lt;/code&gt;&lt;/td&gt;
+&lt;td class=&quot;content&quot;&gt;&lt;code class=&quot;spaces&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;tooltip&amp;nbsp;&amp;nbsp; : &lt;/code&gt;&lt;code class=&quot;string&quot;&gt;&apos;Click to edit...&apos;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&quot;line alt2&quot;&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;number&quot;&gt;&lt;code&gt;12&lt;/code&gt;&lt;/td&gt;
+&lt;td class=&quot;content&quot;&gt;&lt;code class=&quot;spaces&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/code&gt;&lt;code class=&quot;plain&quot;&gt;});&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;number&quot;&gt;&lt;code&gt;13&lt;/code&gt;&lt;/td&gt;
+&lt;td class=&quot;content&quot;&gt;&lt;code class=&quot;plain&quot;&gt;});&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;" />
+								<property name="orderno" value="40" />
+							</bean>
+							<bean class="org.j4.model.Slide">
+								<property name="title" value="多款主题" />
+								<property name="body"
+									value="css html 控制，多个主题，(学习制作中)" />
+								<property name="orderno" value="50" />
+							</bean>
+
+							<bean class="org.j4.model.Slide">
+								<property name="title" value="开源" />
+								<property name="body"
+									value="&lt;p&gt;&lt;span class=&quot;slideadmin&quot;&gt; &lt;br&gt;&lt;a href=&quot;http://zhidao.baidu.com/search?word=%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6&amp;amp;fr=qb_search_exp&amp;amp;ie=utf8&amp;amp;eid_gfrom=151&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; data-word=&quot;14&quot;&gt;开源软件&lt;/a&gt;，英文表示是open source software，简称为OSS，直接的字面意思是公开&lt;a href=&quot;http://zhidao.baidu.com/search?word=%E6%BA%90%E4%BB%A3%E7%A0%81&amp;amp;fr=qb_search_exp&amp;amp;ie=utf8&amp;amp;eid_gfrom=151&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; data-word=&quot;18&quot;&gt;源代码&lt;/a&gt;的软件。软件既然连&lt;a href=&quot;http://zhidao.baidu.com/search?word=%E6%BA%90%E4%BB%A3%E7%A0%81&amp;amp;fr=qb_search_exp&amp;amp;ie=utf8&amp;amp;eid_gfrom=151&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; data-word=&quot;18&quot;&gt;源代码&lt;/a&gt;都公开，因此&lt;a href=&quot;http://zhidao.baidu.com/search?word=%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6&amp;amp;fr=qb_search_exp&amp;amp;ie=utf8&amp;amp;eid_gfrom=151&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; data-word=&quot;14&quot;&gt;开源软件&lt;/a&gt;具备可以免费使用和公布&lt;a href=&quot;http://zhidao.baidu.com/search?word=%E6%BA%90%E4%BB%A3%E7%A0%81&amp;amp;fr=qb_search_exp&amp;amp;ie=utf8&amp;amp;eid_gfrom=151&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; data-word=&quot;18&quot;&gt;源代码&lt;/a&gt;的主要特征。&lt;br&gt;&lt;br&gt;1997春天，&lt;a href=&quot;http://zhidao.baidu.com/search?word=%E8%87%AA%E7%94%B1%E8%BD%AF%E4%BB%B6&amp;amp;fr=qb_search_exp&amp;amp;ie=utf8&amp;amp;eid_gfrom=151&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; data-word=&quot;10&quot;&gt;自由软件&lt;/a&gt;社团的一些领导者聚集到&lt;a href=&quot;http://zhidao.baidu.com/search?word=%E5%8A%A0%E5%88%A9%E7%A6%8F%E5%B0%BC%E4%BA%9A%E5%B7%9E&amp;amp;fr=qb_search_exp&amp;amp;ie=utf8&amp;amp;eid_gfrom=151&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; data-word=&quot;2&quot;&gt;加利福尼亚州&lt;/a&gt;。这个社团包括EricRaymond，TimO’Rerlly，VA Research的总裁Larry Augustin等人，他们所关心的是一种寻找方式，来向以前躲避&lt;a href=&quot;http://zhidao.baidu.com/search?word=%E8%87%AA%E7%94%B1%E8%BD%AF%E4%BB%B6&amp;amp;fr=qb_search_exp&amp;amp;ie=utf8&amp;amp;eid_gfrom=151&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; data-word=&quot;10&quot;&gt;自由软件&lt;/a&gt;思想的人们推广这种思想。他们担心，&lt;a href=&quot;http://zhidao.baidu.com/search?word=%E8%87%AA%E7%94%B1%E8%BD%AF%E4%BB%B6%E5%9F%BA%E9%87%91%E4%BC%9A&amp;amp;fr=qb_search_exp&amp;amp;ie=utf8&amp;amp;eid_gfrom=151&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; data-word=&quot;1&quot;&gt;自由软件基金会&lt;/a&gt;的反商业信条会让人们对&lt;a href=&quot;http://zhidao.baidu.com/search?word=%E8%87%AA%E7%94%B1%E8%BD%AF%E4%BB%B6&amp;amp;fr=qb_search_exp&amp;amp;ie=utf8&amp;amp;eid_gfrom=151&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; data-word=&quot;10&quot;&gt;自由软件&lt;/a&gt;&lt;a href=&quot;http://zhidao.baidu.com/search?word=%E6%95%AC%E8%80%8C%E8%BF%9C%E4%B9%8B&amp;amp;fr=qb_search_exp&amp;amp;ie=utf8&amp;amp;eid_gfrom=151&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; data-word=&quot;9&quot;&gt;敬而远之&lt;/a&gt;。 &lt;br&gt;&lt;br&gt;在Eric Raymond的坚持下，这群人同意他们所缺乏的是&lt;a href=&quot;http://zhidao.baidu.com/search?word=%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80&amp;amp;fr=qb_search_exp&amp;amp;ie=utf8&amp;amp;eid_gfrom=151&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; data-word=&quot;8&quot;&gt;市场营销&lt;/a&gt;活动，这个活动的目的是赢得思想，而不仅仅是&lt;a href=&quot;http://zhidao.baidu.com/search?word=%E5%B8%82%E5%9C%BA%E4%BB%BD%E9%A2%9D&amp;amp;fr=qb_search_exp&amp;amp;ie=utf8&amp;amp;eid_gfrom=151&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; data-word=&quot;6&quot;&gt;市场份额&lt;/a&gt;。最后讨论的结果产生了一个新的术语来描述他们所推进的软件：&lt;a href=&quot;http://zhidao.baidu.com/search?word=Open%20Source&amp;amp;fr=qb_search_exp&amp;amp;ie=utf8&amp;amp;eid_gfrom=151&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; data-word=&quot;3&quot;&gt;Open Source&lt;/a&gt;(开烦扰软件)。他们制定了一系列的指导原则，用来描述哪些软件可以有资格被称为开源软件。 &lt;br&gt;&lt;br&gt;Bruce Perens 为制定开源软件的定义做了很多基础性的工作。&lt;a href=&quot;http://zhidao.baidu.com/search?word=GNU%E5%B7%A5%E7%A8%8B&amp;amp;fr=qb_search_exp&amp;amp;ie=utf8&amp;amp;eid_gfrom=151&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; data-word=&quot;16&quot;&gt;GNU工程&lt;/a&gt;的正式目标之一就是创造一个自由可用的&lt;a href=&quot;http://zhidao.baidu.com/search?word=%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F&amp;amp;fr=qb_search_exp&amp;amp;ie=utf8&amp;amp;eid_gfrom=151&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; data-word=&quot;15&quot;&gt;操作系统&lt;/a&gt;，以作为平台来运行&lt;a href=&quot;http://zhidao.baidu.com/search?word=GNU%E8%BD%AF%E4%BB%B6&amp;amp;fr=qb_search_exp&amp;amp;ie=utf8&amp;amp;eid_gfrom=151&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; data-word=&quot;17&quot;&gt;GNU软件&lt;/a&gt;。从软件引导（softwera boottstrapping）的传统观点来看，Linux已经成为那个平台，L inux是在GNU工具的帮助下创造出来的。Perens曾经是Debian工程的领导者，它所管理的Linux发行版本，只包括那些符合GNU精神的软件。Perens已经在“Debian&lt;a href=&quot;http://zhidao.baidu.com/search?word=%E7%A4%BE%E4%BC%9A%E5%A5%91%E7%BA%A6&amp;amp;fr=qb_search_exp&amp;amp;ie=utf8&amp;amp;eid_gfrom=151&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; data-word=&quot;11&quot;&gt;社会契约&lt;/a&gt;”（Debian Social Contract）中明确地阐明了这一立场。开源软件的定义是“Debian&lt;a href=&quot;http://zhidao.baidu.com/search?word=%E7%A4%BE%E4%BC%9A%E5%A5%91%E7%BA%A6&amp;amp;fr=qb_search_exp&amp;amp;ie=utf8&amp;amp;eid_gfrom=151&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; data-word=&quot;11&quot;&gt;社会契约&lt;/a&gt;”的直接产物，因此开源软件是与GNU的精神&lt;a href=&quot;http://zhidao.baidu.com/search?word=%E4%B8%80%E8%84%89%E7%9B%B8%E6%89%BF&amp;amp;fr=qb_search_exp&amp;amp;ie=utf8&amp;amp;eid_gfrom=151&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; data-word=&quot;7&quot;&gt;一脉相承&lt;/a&gt;的。 &lt;br&gt;&lt;br&gt;与GPL相比，开源软件的定义允许更大授权自由。特别是当软件中混合了专有软件和开源软件时，开源软件的定义允许在它们的基础上生成更大的混合。 &lt;br&gt;&lt;br&gt;结果是，开源&lt;a href=&quot;http://zhidao.baidu.com/search?word=%E8%BD%AF%E4%BB%B6%E8%AE%B8%E5%8F%AF%E8%AF%81&amp;amp;fr=qb_search_exp&amp;amp;ie=utf8&amp;amp;eid_gfrom=151&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; data-word=&quot;4&quot;&gt;软件许可证&lt;/a&gt;能令人信服地允许使用和再分开开源软件，而不必考虑补偿或者信用问题。举例来讲，你可以得到伟大的&lt;a href=&quot;http://zhidao.baidu.com/search?word=Netscape%E6%B5%8F%E8%A7%88%E5%99%A8&amp;amp;fr=qb_search_exp&amp;amp;ie=utf8&amp;amp;eid_gfrom=151&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; data-word=&quot;0&quot;&gt;Netscape浏览器&lt;/a&gt;的源代码，并且把它作为连同另一个软件（可能是专有软件）一起发布出去，而用不着去通知&lt;a href=&quot;http://zhidao.baidu.com/search?word=%E7%BD%91%E6%99%AF&amp;amp;fr=qb_search_exp&amp;amp;ie=utf8&amp;amp;eid_gfrom=151&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; data-word=&quot;19&quot;&gt;网景&lt;/a&gt;（Netscape）公司。&lt;a href=&quot;http://zhidao.baidu.com/search?word=%E7%BD%91%E6%99%AF&amp;amp;fr=qb_search_exp&amp;amp;ie=utf8&amp;amp;eid_gfrom=151&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; data-word=&quot;19&quot;&gt;网景&lt;/a&gt;为什么会希望如此呢？原因很多，最引人注目的是，这样做可以为他们的客户端代码赢得更大的&lt;a href=&quot;http://zhidao.baidu.com/search?word=%E5%B8%82%E5%9C%BA%E4%BB%BD%E9%A2%9D&amp;amp;fr=qb_search_exp&amp;amp;ie=utf8&amp;amp;eid_gfrom=151&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; data-word=&quot;6&quot;&gt;市场份额&lt;/a&gt;。这些代码与他们的&lt;a href=&quot;http://zhidao.baidu.com/search?word=%E5%95%86%E4%B8%9A%E8%BD%AF%E4%BB%B6&amp;amp;fr=qb_search_exp&amp;amp;ie=utf8&amp;amp;eid_gfrom=151&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; data-word=&quot;12&quot;&gt;商业软件&lt;/a&gt;一起工作得的非常好。从这个角度来说，奉送源代码是建立平台的一个很好的方式。这也是&lt;a href=&quot;http://zhidao.baidu.com/search?word=%E7%BD%91%E6%99%AF&amp;amp;fr=qb_search_exp&amp;amp;ie=utf8&amp;amp;eid_gfrom=151&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; data-word=&quot;19&quot;&gt;网景&lt;/a&gt;的人不使用GPL的原因之一。 &lt;br&gt;&lt;br&gt;这在社团中可不是小事一桩。1998年下半年，曾经有一场重要的争论对Linux威胁极大，几乎Linux社团破裂。裂痕是因出现了两个&lt;a href=&quot;http://zhidao.baidu.com/search?word=%E8%BD%AF%E4%BB%B6%E7%B3%BB%E7%BB%9F&amp;amp;fr=qb_search_exp&amp;amp;ie=utf8&amp;amp;eid_gfrom=151&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; data-word=&quot;5&quot;&gt;软件系统&lt;/a&gt;GNOME和KDE而引发的，它们两者都试图建立一个&lt;a href=&quot;http://zhidao.baidu.com/search?word=%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1&amp;amp;fr=qb_search_exp&amp;amp;ie=utf8&amp;amp;eid_gfrom=151&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; data-word=&quot;13&quot;&gt;面向对象&lt;/a&gt;的桌面界面。一方面，KDE利用了Troll Technology公司的Qt库，其中的一部分属于专有代码，但是很稳定、很成熟。另一方面，GNOME决定使用&lt;a href=&quot;http://zhidao.baidu.com/search?word=GTK&amp;amp;fr=qb_search_exp&amp;amp;ie=utf8&amp;amp;eid_gfrom=151&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot; data-word=&quot;21&quot;&gt;GTK&lt;/a&gt;+库，尽管它不如Qt成熟，但是它是完全自由的库。 &lt;br&gt;&lt;br&gt;过去，Troll Technology不得不在使用GPL和维持他们的专有软件立场之间进行选择。GNOME和KDE的裂痕本来会持续下去。然而，在开源软件出现后，虽然Troll仍然控制他们想要的技术，但是Troll可以为希望Qt符合开源软件定义的人改变他们的许可证。Linux社团两个重要部分的裂痕看来要弥合了。&lt;/span&gt;&lt;/p&gt;" />
+								<property name="orderno" value="60" />
+							</bean>
+						</list>
+					</property>
+				</bean>
+			</list>
+
+		</property>
+	</bean>
+
+	<bean id="customEditorConfigurer"
+		class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+		<property name="customEditors">
+			<map>
+				<entry key="java.util.Date">
+					<bean class="org.springframework.beans.propertyeditors.CustomDateEditor">
+						<constructor-arg index="0">
+
+							<bean class="java.text.SimpleDateFormat">
+								<constructor-arg>
+									<value>yyyy-MM-dd</value>
+								</constructor-arg>
+							</bean>
+						</constructor-arg>
+						<constructor-arg index="1">
+							<value>true</value>
+						</constructor-arg>
+					</bean>
+				</entry>
+			</map>
+
+		</property>
+	</bean>
+</beans>
